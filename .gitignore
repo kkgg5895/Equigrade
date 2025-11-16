@@ -1,0 +1,19 @@
+# Sensitive files
+config.php
+ai_grader.php
+
+# Dependency directories
+/vendor
+
+# Uploads & local data
+/uploads
+*.log
+
+# Editor / environment junk
+.vscode/
+.idea/
+.DS_Store
+
+# Cache & system files
+*.tmp
+*.bak
