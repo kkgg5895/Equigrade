@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Assignment — EquiGrade</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-indigo-700 to-purple-700 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">🚀 Submit Assignment — <span class="text-indigo-200">EquiGrade</span></h1>
+      <div class="flex items-center gap-3">
+        <a href="submission-dashboard.php" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium px-4 py-2 rounded-lg transition">
+          ← Back to Dashboard
+        </a>
+        <a href="logout.php" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition">
+          🚪 Sign Out
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-grow flex items-center justify-center px-4">
+    <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md mt-10 border-t-4 border-indigo-500">
+
+      <h2 class="text-xl font-bold text-gray-800 mb-2 text-center">
+        📤 Upload Your Assignment
+      </h2>
+      <p class="text-sm text-gray-500 text-center mb-6">
+        Submit your assignment file below. Allowed formats: <b>.pdf</b>, <b>.docx</b>, <b>.txt</b>
+      </p>
+
+      <form id="uploadForm" action="submit.php" method="POST" enctype="multipart/form-data" class="space-y-5">
+
+        <!-- Assignment Title -->
+        <div>
+          <label for="title" class="block text-gray-700 font-medium mb-1">Assignment Title</label>
+          <input type="text" id="title" name="assignment_title" required
+                 placeholder="e.g. Android Lifecycle Report"
+                 class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+        </div>
+
+        <!-- Course Selection -->
+        <div>
+          <label for="course" class="block text-gray-700 font-medium mb-1">Course</label>
+          <select id="course" name="course" required
+                  class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+            <option value="">— Select Course —</option>
+            <option value="NIT3213 — Android Development">NIT3213 — Android Development</option>
+            <option value="BN204 — Database Technologies">BN204 — Database Technologies</option>
+            <option value="BN304 — Industry Project">BN304 — Industry Project</option>
+            <option value="NIT2124 — Technical Report">NIT2124 — Technical Report</option>
+            <option value="BN206 — System Administration">BN206 — System Administration</option>
+          </select>
+        </div>
+
+        <!-- File Upload -->
+        <div>
+          <label for="file" class="block text-gray-700 font-medium mb-1">Upload File</label>
+          <input type="file" id="file" name="assignment_file" accept=".pdf,.docx,.txt" required
+                 class="w-full border border-gray-300 rounded-lg px-3 py-2 bg-gray-50 cursor-pointer focus:ring-2 focus:ring-indigo-500 focus:outline-none transition">
+          <p class="text-xs text-gray-400 mt-1">Maximum file size: <b>10 MB</b></p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-between items-center mt-6">
+          <a href="submission-dashboard.php"
+             class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg transition font-medium">
+            ← Back to Dashboard
+          </a>
+          <button type="submit"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg transition font-semibold">
+            🚀 Submit Assignment
+          </button>
+        </div>
+      </form>
+
+      <!-- Result Message -->
+      <div id="resultMsg" class="mt-4 text-center text-sm font-medium hidden"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-400 text-sm">
+    ©️ 2025 EquiGrade — FAIR-EVAL AI Grading Assistant
+  </footer>
+
+  <!-- JavaScript (FIXED FOR JSON RESPONSE) -->
+  <script>
+    const form = document.getElementById('uploadForm');
+    const resultMsg = document.getElementById('resultMsg');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      resultMsg.classList.remove('hidden');
+      resultMsg.textContent = '⏳ Uploading and processing your assignment...';
+      resultMsg.className = 'mt-4 text-center text-sm text-indigo-600 font-medium';
+
+      const formData = new FormData(form);
+
+      const response = await fetch('submit.php', {
+        method: 'POST',
+        body: formData
+      });
+
+      let json;
+      try {
+        json = await response.json();
+      } catch (err) {
+        resultMsg.textContent = '❌ Server returned invalid response.';
+        resultMsg.className = 'mt-4 text-center text-sm text-red-600 font-medium';
+        return;
+      }
+
+      console.log(json); // Debugging
+
+      if (json.success === true) {
+        resultMsg.textContent = '✅ Assignment submitted successfully!';
+        resultMsg.className = 'mt-4 text-center text-sm text-green-600 font-medium';
+
+        setTimeout(() => {
+          window.location.href = 'submission-dashboard.php';
+        }, 1500);
+      } else {
+        resultMsg.textContent = '❌ ' + (json.error || 'There was an error. Please try again.');
+        resultMsg.className = 'mt-4 text-center text-sm text-red-600 font-medium';
+      }
+    });
+  </script>
+
+</body>
+</html>

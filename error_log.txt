@@ -1,0 +1,313 @@
+[2025-11-13 01:27:34] === NEW SUBMISSION START ===
+[2025-11-13 01:27:34] TITLE: Android_Lifecycle_Report
+[2025-11-13 01:27:34] COURSE: NIT3213 — Android Development
+[2025-11-13 01:27:34] FILE: Array
+(
+    [name] => submission_6911a8c0cb5eb3.57444503.docx
+    [full_path] => submission_6911a8c0cb5eb3.57444503.docx
+    [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+    [tmp_name] => C:\XAMPPP\tmp\php3F25.tmp
+    [error] => 0
+    [size] => 6918212
+)
+
+[2025-11-13 01:27:34] Saved file to: C:\XAMPPP\htdocs\equigrade-frontend/uploads/submission_691525f6a00b67.29505414.docx
+[2025-11-13 01:27:34] Extracted text length: 16254
+[2025-11-13 01:27:34] Sending request to OpenAI...
+[2025-11-13 01:27:35] ERROR: Incorrect API key provided: sk-proj-*********************************************************************************************************************************************************YcAz. You can find your API key at https://platform.openai.com/account/api-keys.
+[2025-11-13 01:31:00] === NEW SUBMISSION START ===
+[2025-11-13 01:31:00] TITLE: Android_Lifecycle_Report
+[2025-11-13 01:31:00] COURSE: NIT3213 — Android Development
+[2025-11-13 01:31:00] FILE: Array
+(
+    [name] => submission_6911a8c0cb5eb3.57444503.docx
+    [full_path] => submission_6911a8c0cb5eb3.57444503.docx
+    [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+    [tmp_name] => C:\XAMPPP\tmp\php61F2.tmp
+    [error] => 0
+    [size] => 6918212
+)
+
+[2025-11-13 01:31:00] Saved file to: C:\XAMPPP\htdocs\equigrade-frontend/uploads/submission_691526c44aa2f0.44387252.docx
+[2025-11-13 01:31:00] Extracted text length: 16254
+[2025-11-13 01:31:00] Sending request to OpenAI...
+[2025-11-13 01:34:38] === NEW SUBMISSION START ===
+[2025-11-13 01:34:38] TITLE: Android_Lifecycle_Report
+[2025-11-13 01:34:38] COURSE: NIT3213 — Android Development
+[2025-11-13 01:34:38] FILE: Array
+(
+    [name] => EquiGrade_User_Manual.pdf
+    [full_path] => EquiGrade_User_Manual.pdf
+    [type] => application/pdf
+    [tmp_name] => C:\XAMPPP\tmp\phpB6DC.tmp
+    [error] => 0
+    [size] => 3114
+)
+
+[2025-11-13 01:34:38] Saved file to: C:\XAMPPP\htdocs\equigrade-frontend/uploads/submission_6915279e6be3d4.01394429.pdf
+[2025-11-13 01:34:38] Extracted text length: 27
+[2025-11-13 01:34:38] Sending request to OpenAI...
+[2025-11-13 01:34:46] AI RAW OUTPUT: {
+  "rubric_used": {
+    "criterion_1": "Content Accuracy",
+    "criterion_2": "Structure & Organization",
+    "criterion_3": "Critical Thinking",
+    "criterion_4": "Presentation & Clarity",
+    "criterion_5": "Originality"
+  },
+  "score_breakdown": {
+    "criterion_1": 0,
+    "criterion_2": 0,
+    "criterion_3": 0,
+    "criterion_4": 0,
+    "criterion_5": 0
+  },
+  "total_score": 0,
+  "confidence": 100,
+  "feedback": "No readable text was extracted from your submission. Please resubmit your assignment with the text properly included."
+}
+[2025-11-13 01:35:20] === NEW SUBMISSION START ===
+[2025-11-13 01:35:20] TITLE: Android_Lifecycle_Report
+[2025-11-13 01:35:20] COURSE: NIT3213 — Android Development
+[2025-11-13 01:35:20] FILE: Array
+(
+    [name] => Practical.docx
+    [full_path] => Practical.docx
+    [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+    [tmp_name] => C:\XAMPPP\tmp\php5A32.tmp
+    [error] => 0
+    [size] => 351652
+)
+
+[2025-11-13 01:35:20] Saved file to: C:\XAMPPP\htdocs\equigrade-frontend/uploads/submission_691527c83e6632.13142913.docx
+[2025-11-13 01:35:20] Extracted text length: 2403
+[2025-11-13 01:35:20] Sending request to OpenAI...
+[2025-11-13 01:35:27] AI RAW OUTPUT: {
+  "rubric_used": {
+    "criterion_1": "Content Accuracy",
+    "criterion_2": "Structure & Organization",
+    "criterion_3": "Critical Thinking",
+    "criterion_4": "Presentation & Clarity",
+    "criterion_5": "Originality"
+  },
+  "score_breakdown": {
+    "criterion_1": 90,
+    "criterion_2": 85,
+    "criterion_3": 80,
+    "criterion_4": 75,
+    "criterion_5": 70
+  },
+  "total_score": 81,
+  "confidence": 95,
+  "feedback": "Excellent detail in network configurations. Improve clarity in section transitions and enhance originality in problem-solving approaches."
+}
+[2025-11-13 01:36:52] === NEW SUBMISSION START ===
+[2025-11-13 01:36:52] TITLE: Essay 1
+[2025-11-13 01:36:52] COURSE: NIT3213 — Android Development
+[2025-11-13 01:36:52] FILE: Array
+(
+    [name] => Report for Lab Assessment 3.docx
+    [full_path] => Report for Lab Assessment 3.docx
+    [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+    [tmp_name] => C:\XAMPPP\tmp\phpC194.tmp
+    [error] => 0
+    [size] => 5211516
+)
+
+[2025-11-13 01:36:52] Saved file to: C:\XAMPPP\htdocs\equigrade-frontend/uploads/submission_69152824527ce1.47953679.docx
+[2025-11-13 01:36:52] Extracted text length: 19509
+[2025-11-13 01:36:52] Sending request to OpenAI...
+[2025-11-13 01:37:00] AI RAW OUTPUT: {
+  "rubric_used": {
+    "criterion_1": "Content Accuracy",
+    "criterion_2": "Structure & Organization",
+    "criterion_3": "Critical Thinking",
+    "criterion_4": "Presentation & Clarity",
+    "criterion_5": "Originality"
+  },
+  "score_breakdown": {
+    "criterion_1": 95,
+    "criterion_2": 90,
+    "criterion_3": 85,
+    "criterion_4": 88,
+    "criterion_5": 80
+  },
+  "total_score": 88,
+  "confidence": 95,
+  "feedback": "Excellent detail and accuracy in content with strong structure. Enhance originality by incorporating unique perspectives or case studies."
+}
+[2025-11-13 01:40:12] === NEW SUBMISSION START ===
+[2025-11-13 01:40:12] TITLE: Android_Lifecycle_Report
+[2025-11-13 01:40:12] COURSE: NIT3213 — Android Development
+[2025-11-13 01:40:12] FILE: Array
+(
+    [name] => submission_6911a8c0cb5eb3.57444503.docx
+    [full_path] => submission_6911a8c0cb5eb3.57444503.docx
+    [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+    [tmp_name] => C:\XAMPPP\tmp\phpCF92.tmp
+    [error] => 0
+    [size] => 6918212
+)
+
+[2025-11-13 01:40:12] Saved file to: C:\XAMPPP\htdocs\equigrade-frontend/uploads/submission_691528ec8b6347.15093840.docx
+[2025-11-13 01:40:12] Extracted text length: 16254
+[2025-11-13 01:40:12] Sending request to OpenAI...
+[2025-11-13 01:40:18] AI RAW OUTPUT: {
+  "rubric_used": {
+    "criterion_1": "Content Accuracy",
+    "criterion_2": "Structure & Organization",
+    "criterion_3": "Critical Thinking",
+    "criterion_4": "Presentation & Clarity",
+    "criterion_5": "Originality"
+  },
+  "score_breakdown": {
+    "criterion_1": 95,
+    "criterion_2": 90,
+    "criterion_3": 85,
+    "criterion_4": 88,
+    "criterion_5": 80
+  },
+  "total_score": 88,
+  "confidence": 95,
+  "feedback": "Excellent technical detail and application of virtualization concepts. Improve on originality and deeper critical analysis."
+}
+[2025-11-13 01:40:26] === NEW SUBMISSION START ===
+[2025-11-13 01:40:26] TITLE: Android_Lifecycle_Report
+[2025-11-13 01:40:26] COURSE: NIT3213 — Android Development
+[2025-11-13 01:40:26] FILE: Array
+(
+    [name] => Medium_Quality_Essay_Climate_Change.docx
+    [full_path] => Medium_Quality_Essay_Climate_Change.docx
+    [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+    [tmp_name] => C:\XAMPPP\tmp\php598.tmp
+    [error] => 0
+    [size] => 37670
+)
+
+[2025-11-13 01:40:26] Saved file to: C:\XAMPPP\htdocs\equigrade-frontend/uploads/submission_691528fa42fba3.72003810.docx
+[2025-11-13 01:40:26] Extracted text length: 2088
+[2025-11-13 01:40:26] Sending request to OpenAI...
+[2025-11-13 01:40:33] AI RAW OUTPUT: {
+  "rubric_used": {
+    "criterion_1": "Content Accuracy",
+    "criterion_2": "Structure & Organization",
+    "criterion_3": "Critical Thinking",
+    "criterion_4": "Presentation & Clarity",
+    "criterion_5": "Originality"
+  },
+  "score_breakdown": {
+    "criterion_1": 85,
+    "criterion_2": 80,
+    "criterion_3": 75,
+    "criterion_4": 90,
+    "criterion_5": 70
+  },
+  "total_score": 80,
+  "confidence": 95,
+  "feedback": "The essay effectively addresses the issue of climate change with accurate content and clear presentation. However, enhancing the structure for smoother transitions and incorporating more original perspectives could improve the discussion."
+}
+[2025-11-13 01:55:14] === NEW SUBMISSION START ===
+[2025-11-13 01:55:15] TITLE: Android_Lifecycle_Report
+[2025-11-13 01:55:15] COURSE: NIT3213 — Android Development
+[2025-11-13 01:55:15] FILE: Array
+(
+    [name] => submission_6911a8c0cb5eb3.57444503.docx
+    [full_path] => submission_6911a8c0cb5eb3.57444503.docx
+    [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+    [tmp_name] => C:\XAMPPP\tmp\php932B.tmp
+    [error] => 0
+    [size] => 6918212
+)
+
+[2025-11-13 01:55:15] Saved file to: C:\XAMPPP\htdocs\equigrade-frontend/uploads/submission_69152c73336170.64774804.docx
+[2025-11-13 01:55:15] Extracted text length: 16254
+[2025-11-13 01:55:19] Sending request to OpenAI...
+[2025-11-13 01:55:27] AI RAW OUTPUT: {
+  "rubric_used": {
+    "criterion_1": "Content Accuracy",
+    "criterion_2": "Structure & Organization",
+    "criterion_3": "Critical Thinking",
+    "criterion_4": "Presentation & Clarity",
+    "criterion_5": "Originality"
+  },
+  "score_breakdown": {
+    "criterion_1": 95,
+    "criterion_2": 90,
+    "criterion_3": 85,
+    "criterion_4": 88,
+    "criterion_5": 80
+  },
+  "total_score": 88,
+  "confidence": 95,
+  "feedback": "Excellent detail and accuracy in content with clear, logical structure. Enhance originality by incorporating more unique perspectives or solutions."
+}
+[2025-11-13 01:55:38] === NEW SUBMISSION START ===
+[2025-11-13 01:55:38] TITLE: Essay 1
+[2025-11-13 01:55:38] COURSE: BN304 — Industry Project
+[2025-11-13 01:55:38] FILE: Array
+(
+    [name] => EquiGrade_User_Manual.pdf
+    [full_path] => EquiGrade_User_Manual.pdf
+    [type] => application/pdf
+    [tmp_name] => C:\XAMPPP\tmp\phpF1C8.tmp
+    [error] => 0
+    [size] => 3114
+)
+
+[2025-11-13 01:55:38] Saved file to: C:\XAMPPP\htdocs\equigrade-frontend/uploads/submission_69152c8a9fd003.62324348.pdf
+[2025-11-13 01:55:38] Extracted text length: 27
+[2025-11-13 01:55:38] Sending request to OpenAI...
+[2025-11-13 01:55:44] AI RAW OUTPUT: {
+  "rubric_used": {
+    "criterion_1": "Content Accuracy",
+    "criterion_2": "Structure & Organization",
+    "criterion_3": "Critical Thinking",
+    "criterion_4": "Presentation & Clarity",
+    "criterion_5": "Originality"
+  },
+  "score_breakdown": {
+    "criterion_1": 0,
+    "criterion_2": 0,
+    "criterion_3": 0,
+    "criterion_4": 0,
+    "criterion_5": 0
+  },
+  "total_score": 0,
+  "confidence": 100,
+  "feedback": "No text was extracted from your submission. Please ensure that your file is not corrupted and contains readable text."
+}
+[2025-11-13 01:56:27] === NEW SUBMISSION START ===
+[2025-11-13 01:56:27] TITLE: Essay 1
+[2025-11-13 01:56:27] COURSE: BN304 — Industry Project
+[2025-11-13 01:56:27] FILE: Array
+(
+    [name] => Project Diary Group 8.docx
+    [full_path] => Project Diary Group 8.docx
+    [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+    [tmp_name] => C:\XAMPPP\tmp\phpB122.tmp
+    [error] => 0
+    [size] => 2232667
+)
+
+[2025-11-13 01:56:27] Saved file to: C:\XAMPPP\htdocs\equigrade-frontend/uploads/submission_69152cbba946d3.05565072.docx
+[2025-11-13 01:56:27] Extracted text length: 24863
+[2025-11-13 01:56:27] Sending request to OpenAI...
+[2025-11-13 01:56:34] AI RAW OUTPUT: {
+  "rubric_used": {
+    "criterion_1": "Content Accuracy",
+    "criterion_2": "Structure & Organization",
+    "criterion_3": "Critical Thinking",
+    "criterion_4": "Presentation & Clarity",
+    "criterion_5": "Originality"
+  },
+  "score_breakdown": {
+    "criterion_1": 85,
+    "criterion_2": 80,
+    "criterion_3": 75,
+    "criterion_4": 90,
+    "criterion_5": 70
+  },
+  "total_score": 80,
+  "confidence": 95,
+  "feedback": "The report is well-structured and presents the project progress clearly. Enhance critical thinking by deeper analysis of challenges. Increase originality in problem-solving approaches."
+}
