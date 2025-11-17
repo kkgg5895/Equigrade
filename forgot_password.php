@@ -1,5 +1,5 @@
 <?php
-// ==== Debug options (for local testing) ====
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    // ==== Create Reset Token ====
+    //  Create Reset Token 
     $token = bin2hex(random_bytes(32));
     $expires = date('Y-m-d H:i:s', time() + 3600); // valid for 1 hour
 
