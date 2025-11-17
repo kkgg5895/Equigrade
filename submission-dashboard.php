@@ -4,7 +4,7 @@ session_start();
 require_once 'config.php';
 require_once 'db.php';
 
-// ---- AUTH CHECK ----
+//  AUTH CHECK 
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit;
@@ -17,7 +17,7 @@ global $pdo;
 $search = trim($_GET['search'] ?? '');
 $courseFilter = trim($_GET['course'] ?? '');
 
-// ---- QUERY ----
+//  QUERY 
 $sql = "
     SELECT 
         s.submission_id,
