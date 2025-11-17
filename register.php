@@ -33,10 +33,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    // ✅ Secure password hashing
+    //  Secure password hashing
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    // ✅ Insert into single column 'password'
+    //  Insert into single column 'password'
     $stmt = $pdo->prepare("
         INSERT INTO users (full_name, email, password, role, created_at)
         VALUES (?, ?, ?, ?, NOW())
