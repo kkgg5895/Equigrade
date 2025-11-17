@@ -1,8 +1,7 @@
 <?php
 // auth.php
-// ===================================================
 // Handles user registration and login
-// ===================================================
+
 
 require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/helpers.php';
@@ -14,9 +13,8 @@ $pdo = get_db();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $action = $_POST['action'] ?? '';
 
-    // ---------------------------------------------------
     // REGISTER NEW USER
-    // ---------------------------------------------------
+   
     if ($action === 'register') {
         if (!check_csrf($_POST['csrf'] ?? '')) {
             http_response_code(400);
@@ -54,9 +52,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // ---------------------------------------------------
+   
     // LOGIN EXISTING USER
-    // ---------------------------------------------------
+   
     if ($action === 'login') {
         if (!check_csrf($_POST['csrf'] ?? '')) {
             http_response_code(400);
