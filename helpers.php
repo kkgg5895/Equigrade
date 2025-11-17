@@ -3,9 +3,9 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// =============================
+
 // Flash Message Functions
-// =============================
+
 function flash($type, $message) {
     if (!isset($_SESSION['flashes'])) {
         $_SESSION['flashes'] = [];
