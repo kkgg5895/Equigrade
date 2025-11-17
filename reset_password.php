@@ -10,7 +10,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// === STEP 1: Validate Token from URL ===
+//  Validate Token from URL 
 $token = $_GET['token'] ?? '';
 
 if (empty($token)) {
@@ -21,7 +21,7 @@ if (empty($token)) {
 
 global $pdo;
 
-// ✅ Fetch user based on token (and not expired)
+// Fetch user based on token 
 $stmt = $pdo->prepare("SELECT * FROM users WHERE reset_token = ? AND reset_expires > NOW()");
 $stmt->execute([$token]);
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -32,7 +32,7 @@ if (!$user) {
     exit;
 }
 
-// === STEP 2: Handle Password Reset Submission ===
+// Handle Password Reset Submission ===
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = trim($_POST['password'] ?? '');
     $confirm  = trim($_POST['confirm'] ?? '');
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $hashed = password_hash($password, PASSWORD_BCRYPT);
 
-        // ✅ Update password, clear token
+        // Update password, clear token
         $update = $pdo->prepare("UPDATE users 
             SET password = ?, reset_token = NULL, reset_expires = NULL 
             WHERE user_id = ?");
