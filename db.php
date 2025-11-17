@@ -1,5 +1,5 @@
 <?php
-// db.php — Database connection for EquiGrade
+
 
 $host = 'localhost';
 $db   = 'equigrade'; // Change this to your actual DB name
