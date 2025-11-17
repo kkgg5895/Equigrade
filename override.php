@@ -7,7 +7,7 @@ require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/helpers.php';
 
-// Ensure teacher is logged in
+
 if (empty($_SESSION['user_id']) || ($_SESSION['role'] ?? '') !== 'teacher') {
     flash('error', 'Access denied. Please log in as a teacher.');
     header('Location: login.php');
