@@ -2,9 +2,7 @@
 require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/helpers.php';
 
-/**
- * Grade submission using rubric-based text analysis
- */
+//Submission using rubrics//
 function grade_submission_with_rubric(int $submission_id, int $user_id, string $course): array {
     $pdo = get_db();
 
@@ -28,7 +26,7 @@ function grade_submission_with_rubric(int $submission_id, int $user_id, string $
     $criteria = json_decode($rubric['criteria_json'], true);
     if (!is_array($criteria)) throw new Exception("Invalid rubric format");
 
-    // 2️⃣ Load file text
+    // Load file text
     $stmt = $pdo->prepare("SELECT filename FROM submissions WHERE submission_id = ?");
     $stmt->execute([$submission_id]);
     $file = $stmt->fetchColumn();
@@ -37,14 +35,14 @@ function grade_submission_with_rubric(int $submission_id, int $user_id, string $
     $filePath = UPLOAD_DIR . '/' . $file;
     $text = strtolower(strip_tags(file_get_contents($filePath)));
 
-    // 3️⃣ Define rubric keyword sets
+    //  Define rubric keyword sets
     $keywordSets = [
         'content' => ['introduction', 'concept', 'explain', 'overview', 'example'],
         'structure' => ['paragraph', 'heading', 'summary', 'conclusion', 'organized'],
         'research' => ['source', 'data', 'evidence', 'reference', 'analysis']
     ];
 
-    // 4️⃣ Analyze text
+    //  Analyze text
     $totalScore = 0;
     $feedbackParts = [];
 
@@ -73,7 +71,7 @@ function grade_submission_with_rubric(int $submission_id, int $user_id, string $
     $confidence = rand(85, 99);
     $feedback = "Rubric-based AI grading:\n" . implode("; ", $feedbackParts);
 
-    // 5️⃣ Save results
+    //  Save results
     $insert = $pdo->prepare("
         INSERT INTO grades (submission_id, ai_score, confidence, feedback, graded_at)
         VALUES (?, ?, ?, ?, NOW())
