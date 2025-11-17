@@ -2,7 +2,7 @@
 session_start();
 header("Content-Type: application/json");
 
-// Includes
+
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/vendor/autoload.php';
