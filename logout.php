@@ -2,10 +2,10 @@
 // logout.php
 session_start();
 
-// Unset all session variables
+
 $_SESSION = [];
 
-// Delete the session cookie if it exists
+
 if (ini_get("session.use_cookies")) {
     $params = session_get_cookie_params();
     setcookie(
